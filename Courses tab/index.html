@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap and external css stylesheet-->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    
+    <!--font awesome cdn-->    
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    
+    <!--charts.js cdn-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.4.1/chart.min.js"></script>
+
+
+    <title>Courses</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="sidebar">
+            <img id="logo" src="images/wyblo.png">
+            <ul>
+                <li>
+                    <a class="btn btn-light" href="#">Overview</a>
+                </li>
+                
+                <li>
+                    <a class="btn btn-light" href="#">Dashboards</a>
+                </li>
+                
+                <li>
+                    <a class="btn btn-light" id="hover" href="#">Courses</a>
+                </li>
+                
+                <li>
+                    <a class="btn btn-light" href="#">CRM</a>
+                </li>
+                
+                <li>
+                    <a class="btn btn-light" href="#">Survey</a>
+                </li>
+                
+                <li>
+                    <a class="btn btn-light" href="#">Certificates</a>
+                </li>
+                
+                <li>
+                    <a class="btn btn-light" href="#">Content management</a>
+                </li>
+                                               
+                <li>
+                        <a class="btn btn-light" href="#">Settings</a>
+                </li>
+                
+                <li>
+                       <a id="logout" class="btn btn-light" href="#">Logout</a>
+                </li>
+                
+            </li>
+            </ul> 
+            
+        </div>
+
+        <div class="social_media">
+              
+        </div>
+       
+        <div class="main_content" >
+            <div class="header">
+                <input type="text" id="search-input" placeholder="search..." name=""><a href="#" class="search-icon"></a>
+                <h2>Courses</h2>
+            </div>  
+            
+            <div class="info">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="dropdown1">All</button>
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="dropdown2">All team</button>
+                <button type="button" class="add-course-btn" id="export"><i class="fas fa-download"></i>&nbsp Export</button>
+                <button type="button" class="add-course-btn" id="calender"><i class="far fa-calendar-alt"></i>&nbsp View calender</button>
+                <button type="button" class="add-course-btn" id="analytics"><i class="fad fa-analytics"></i>&nbsp View analytics</button>
+                <button type="button" class="add-course-btn" id="add-folder"><i class="fal fa-folder-plus"></i>&nbsp Add folder</button>
+                <button type="button" class="add-course-btn" id="course-btn"><i class="fal fa-plus-circle"></i>&nbsp Add course</button>
+
+            </div>
+                 
+            <div>
+                <table>
+                    <tr id="row">
+                        <th><input type="checkbox" id="checkbox"></th>
+                        <th>Status</th>
+                        <th>Name</th>
+                        <th>#sessions</th>
+                        <th>Begin date</th>
+                        <th>End date</th>
+                        <th>#Registrants</th>
+                        <th>#Attendees</th>
+                        <th>Tags</th>
+                        <th>Trainers</th>
+                        <th>Responsible</th>
+                        <th>Guest</th>
+                        <th>Certific.</th>
+                        <th>Location</th>
+                        <th>Language</th>
+                    </tr>
+                    <tr id="row1">
+                         <td><input type="checkbox" id="checkbox"></td>
+                        <td>Live</td>
+                        <td>Negotiation</td>
+                        <td>icon</td>
+                        <td>29/05/2021</td>
+                        <td>12/06/2021</td>
+                        <td>60</td>
+                        <td>55</td>
+                        <td>#new</td>
+                        <td>trainers</td>
+                        <td>pic</td>
+                        <td>pic</td>
+                        <td>Yes</td>
+                        <td>Online</td>
+                        <td>pic</td>
+                    </tr>
+                      
+                      <tr id="row1">
+                        <td><input type="checkbox" id="checkbox"></td>
+                        <td>Live</td>
+                        <td>Negotiation</td>
+                        <td>icon</td>
+                        <td>29/05/2021</td>
+                        <td>12/06/2021</td>
+                        <td>60</td>
+                        <td>55</td>
+                        <td>#new</td>
+                        <td>trainers</td>
+                        <td>pic</td>
+                        <td>pic</td>
+                        <td>Yes</td>
+                        <td>Online</td>
+                        <td>pic</td>
+                        
+                      </tr>
+                      <tr id="row1">
+                        <td><input type="checkbox" id="checkbox"></td>
+                        <td>Live</td>
+                        <td>Negotiation</td>
+                        <td>icon</td>
+                        <td>29/05/2021</td>
+                        <td>12/06/2021</td>
+                        <td>60</td>
+                        <td>55</td>
+                        <td>#new</td>
+                        <td>trainers</td>
+                        <td>pic</td>
+                        <td>pic</td>
+                        <td>Yes</td>
+                        <td>Online</td>
+                        <td>pic</td>
+                        
+                      </tr>
+                </table>
+            </div>
+            
+        </div>
+            
+       
+    </div>
+
+    
+
+    
+
+ </body>
+ 
+ 
+ </html>
